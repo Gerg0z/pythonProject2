@@ -1,4 +1,4 @@
-def adatoszerzes(nev):
+def adatszerzes(nev):
     with open(nev, "r", encoding="utf-8") as file:
         sorok = file.read().splitlines()
     return sorok
@@ -26,7 +26,7 @@ def rendez(sor):
 def main():
     fajlnev = "sneakers.csv"
 
-    cipok = rendez(adatoszerzes(fajlnev))
+    cipok = rendez(adatszerzes(fajlnev))
     rendszerezesi_lehetosegek = {
         "1": "title",
         "2": "color_breif",
